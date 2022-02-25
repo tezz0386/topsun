@@ -1,0 +1,232 @@
+.team-banner {
+    background-image: url("{{ asset('uploads/abouts/thumbnail/'.$about->image)}}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.team-image {
+    height: 350px!important;
+    width: 100%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    /* height: fit-content; */
+    height: 350px;
+    padding: 0% 5%;
+    /* max-heigt: fit-content; */
+}
+
+.flip-card-second {
+    background-color: transparent;
+    width: 100%;
+    /* height: fit-content; */
+    height: 350px;
+    padding: 0% 15%;
+}
+.second-padding{
+    padding: 0% 15%;
+}
+
+.flip-card-third {
+    background-color: transparent;
+    width: 100%;
+    /* height: fit-content; */
+    height: 350px;
+    padding: 0% 15%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.abc {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    /* position: relative; */
+    bottom: 0;
+    /* transform: translate(-50%); */
+    /* background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    /* height: 100%; */
+    /* transition: .5s ease;
+    opacity:0; */
+    color: white;
+    /* font-size: 2em; */
+    padding: 20px;
+    text-align: left;
+}
+
+
+/* .overlay-inner{
+position: absolute;
+bottom: 0%;
+  } */
+
+.post {
+    /* text-decoration: underline;
+    text-decoration-color:white;
+    text-decoration-thickness: 7px; */
+    padding-bottom: 5px;
+    border-bottom: 5px solid white;
+    width: fit-content;
+}
+
+.post h3 {
+    font-size: 2vw;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(114, 212, 16);
+}
+
+.work-experience {
+    border: 2px solid rgb(248, 75, 12);
+    background-color: coral;
+}
+
+
+/* .work-experience:hover{
+      background-color:darkblue;
+      font-size: 40px;
+      color: darkblue;
+  } */
+
+.personal-information {
+    border: 2px solid rgb(248, 75, 12);
+    background-color: coral;
+    padding: 5%;
+}
+
+.info-title {
+    font-size: 1em;
+    color: darkblue;
+    line-height: 100%;
+}
+
+.info-detail {
+    font-size: 1em;
+    color: rgb(248, 75, 12);
+    line-height: 100%;
+}
+
+.info-detail-para {
+    font-size: 15px;
+    color: rgb(248, 75, 12);
+}
+
+.personal-details {
+    line-height: 100%;
+    padding: 2%;
+    /* text-align: right; */
+}
+
+.work-info {
+    padding: 10%;
+}
+
+.work-info-inner {
+    height: 35px;
+}
+
+.work-info-inner-startdiv {
+    width: 33%;
+    text-align: right;
+    margin-right: 20px;
+    color: darkblue;
+}
+
+.work-info-inner-center {
+    height: 10px;
+    width: 33%;
+    background: coral;
+    margin-top: 7px;
+}
+
+.work-info-right {
+    color: coral;
+    width: 33%;
+    margin-left: 20px;
+    color: darkblue;
+}
+
+@media (max-width:768px) {
+    .info-detail-para {
+        font-size: 12px;
+    }
+    .flip-card-first {
+        padding: 0% 1%;
+    }
+    .flip-card-third {
+        width: 100%;
+        padding: 0%;
+    }
+    .flip-card-second {
+        width: 100%;
+        padding: 0% 3%;
+    }
+    .second-padding{
+        padding: 0% 8%;
+    }
+}
+
+@media (max-width:425px) {
+    .flip-card {
+        width: 100%;
+    }
+    .flip-card-second {
+        width: 100%;
+        padding: 0% 1%;
+    }
+    .info-detail-para {
+        font-size: 0.5vw!important;
+    }
+    .second-padding{
+        padding: 0% 0%;
+    }
+}

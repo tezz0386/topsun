@@ -1,0 +1,37 @@
+.limit-paragraph{
+	line-height: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5; /* number of lines to show */
+	-webkit-box-orient: vertical;
+	
+}
+.blog-title{
+    color: #f26f1f;
+}
+.paragraph{
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.blog-body li p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.blog-body{
+    border: 1px solid #888888;
+    padding-bottom: 50px;
+    
+}
+.blog-post{
+    box-shadow: 3px 3px 0px 0px #888888;
+}
+
+
+/*  */
+.recent-posts{
+    color: #f26f1f;
+    text-decoration: underline;
+      text-decoration-color:rgb(25, 135, 84);
+}

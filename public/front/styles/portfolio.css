@@ -1,0 +1,77 @@
+
+.portfolio-header{
+    text-decoration: underline; 
+    text-decoration-color:rgb(25, 135, 84);
+}
+.client-type-container{
+    background: #b9ceca;
+}
+.list0f-organizations{
+    background: #b9ceca;
+}
+.recomendation a{
+    color: white!important;
+    text-decoration: none;
+}
+.recomendation a:hover{
+    border-bottom: none!important;
+    color: #f26f1f!important;
+}
+.client-type-inner:hover p{
+    border-bottom: none!important;
+    color: #f26f1f;
+}
+
+/* portfolio active */
+.active p{
+    border-bottom: none!important;
+    color: #f26f1f!important;
+}
+.portfolio-active p::after {
+    content: "";
+    background: url("../Images/gov-icon.png") no-repeat;
+}
+
+.org-header{
+    background: rgb(3, 111, 56);
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+.list-odd{
+    background: rgb(25, 135, 84);
+    margin-top: 10px;
+    line-height: 40px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+   
+}
+.list-even{
+    /* background: rgb(3, 111, 56); */
+    background: rgb(25, 135, 84);
+    margin-top: 10px;
+    line-height: 40px;
+   
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+@media (max-width: 425px) { 
+    .list0f-organizations{
+        margin-top: 10px;
+    }
+    .list-even,.list-odd{
+        font-size: 15px;
+        line-height: normal;
+        padding: 5px 0px 5px 5px;
+    }
+    .org-header{
+        font-size: 15px;
+        line-height: normal;
+        padding: 5px 0px 5px 5px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
